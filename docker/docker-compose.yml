@@ -37,7 +37,7 @@ services:
     restart: always
   leona-rabbitmq:
     restart: always
-    image: rabbitmq:management
+    image: docker.m.daocloud.io/rabbitmq:management
     container_name: rabbitmq
     hostname: rabbit
     ports:
