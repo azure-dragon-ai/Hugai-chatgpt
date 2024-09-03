@@ -1,0 +1,53 @@
+version: '3'
+services:
+  leona-mysql80:
+    image: mysql:8.0
+    container_name: leona-mysql
+    ports:
+      - "3310:3306"
+    command:
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
+      --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./db/conf.d:/etc/mysql/conf.d
+      - ./db/data:/var/lib/mysql
+      - ./db/init-sql:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: leona123456
+    restart: always
+  leona-redis:
+    #定义主机名
+    container_name: leona-redis
+    #使用的镜像；注意这里的版本要与第2步redis版本一致
+    image: redis:6.0.6
+    #容器的映射端口
+    ports:
+      - 6380:6379 #注意第二个端口必须是redis.conf中的端口号
+    command: redis-server /etc/redis.conf
+    #定义挂载点
+    volumes:
+      - ./data:/data #挂载/docker-compose/redis/data至容器
+      - ./conf/redis.conf:/etc/redis.conf #挂载conf至容器
+    privileged: true   #环境变量
+    environment:
+      - TZ=Asia/Shanghai
+      - LANG=en_US.UTF-8
+    #docker 重启后，容器自启动
+    restart: always
+  leona:
+    build:
+      context: leona-fe
+      dockerfile: Dockerfile
+    container_name: leona-fe
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./leona/storage:/storage
+      - ./leona/logs:/logs
+      - ./leona/backup:/backup
+      - /etc/localtime:/etc/localtime
+    depends_on:
+      - leona-mysql80
+      - leona-redis
+    restart: always

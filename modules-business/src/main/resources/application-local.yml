@@ -21,9 +21,9 @@ spring:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
       type: com.alibaba.druid.pool.xa.DruidXADataSource
-      url: jdbc:mysql://localhost:3306/db_hugai?useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&autoReconnect=true&characterEncoding=utf8&allowPublicKeyRetrieval=true
+      url: jdbc:mysql://leona-mysql80:3306/leona?useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai&autoReconnect=true&characterEncoding=utf8&allowPublicKeyRetrieval=true
       username: root
-      password: 123456
+      password: leona123456
       initial-size: 5
       max-active: 20
       min-idle: 1
@@ -38,7 +38,7 @@ spring:
       connect-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
   # redis配置
   redis:
-    host: 127.0.0.1
+    host: leona-redis
     port: 6379
     database: 8
     timeout: 10s
@@ -49,7 +49,7 @@ spring:
         max-active: 20
         max-wait: -1ms
     # redis密码，为空可以删掉
-    password:
+    password: leona123456
   mail:
     host: smtp.qq.com
     username: xxxxxx@qq.com

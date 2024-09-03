@@ -1,0 +1,98 @@
+```shell
+mvn clean package
+cp target/leona-api.jar docker/leona-fe/leona.jar
+cp docker/leona/application.yml docker/leona-fe/
+cp docker/leona/Dockerfile docker/leona-fe/
+
+sudo docker compose build
+sudo docker compose down
+sudo docker compose up
+sudo docker compose up -d
+
+sudo docker compose ps
+
+sudo docker compose up -d leona-mysql80
+sudo docker compose stop leona-mysql80
+sudo docker compose rm leona-mysql80
+
+sudo docker compose up leona
+sudo docker compose up -d leona
+sudo docker compose stop leona
+sudo docker compose start leona
+sudo docker compose rm leona
+sudo docker compose logs -f leona
+
+mvn clean package -Pprod
+nohup java -jar -Dspring.profiles.active=prod leona-api.jar &
+npm run build
+
+curl 'myip.ipip.net'
+
+mysql -h127.0.0.1 -uroot -P3310 -p
+leona123456
+
+create database leona default character set utf8mb4 collate utf8mb4_unicode_ci;
+
+create user 'leona'@'127.0.0.1' identified by 'leona123456';
+grant all privileges on leona.* to 'leona'@'127.0.0.1';
+flush privileges;
+
+create user 'leona'@'%' identified by 'leona123456';
+grant all privileges on leona.* to 'leona'@'%';
+flush privileges;
+
+mysqldump -h127.0.0.1 -uroot -P3306 -p leona > leona20240606.sql
+mysql -h127.0.0.1 -uroot -P3310 -p leona < ./db/mysql-0.7.0.sql
+mysql -h10.0.0.13 -uroot -P3306 -p
+mysql -h10.0.0.13 -uroot -P3306 -p leona < leona20240606.sql
+
+redis-cli -h 127.0.0.1 -p 6380
+auth default leona123456
+
+redis-cli -h 10.0.0.8
+auth panda2024
+select 1
+keys *
+flushall
+
+mysql -h10.0.0.13 -uroot -P3306 -p
+leona123456
+use leona
+show tables;
+select * from wx_user;
+truncate table wx_user;
+mysql -h10.0.0.13 -uleona -P3306 -p
+leona123456
+
+http://152.136.174.88:8080/
+http://152.136.174.88:8080/wx/
+
+cd leona-manage
+cnpm install
+npm run serve
+npm run build
+
+https://panda1.ai-space.net/
+https://panda1.ai-space.net/wx/swagger-ui/index.html
+https://panda1.wepromo.cn
+admin
+Hjh@20241
+
+cd leona-client
+cnpm install
+npm run serve
+npm run build
+https://panda-fe.ai-space.net/
+https://panda-fe.wepromo.cn/
+
+https://panda1.ai-space.net/wx/wxAuth/codeToOpenid
+https://panda1.ai-space.net/wx/wxAuth/codeToUserInfo
+https://panda1.ai-space.net/wx/wxAuth/getShareSignature
+
+https://panda1.wepromo.cn/wx/wxAuth/getShareSignature
+https://panda1.wepromo.cn/wx/wxChat/yuanqi
+```
+
+```
+http://localhost:8080/wx/swagger-ui/index.html
+```

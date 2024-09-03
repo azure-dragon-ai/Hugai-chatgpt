@@ -65,9 +65,9 @@ bebas:
 knife4j:
   enable: true
   openapi:
-    title: HugAi接口文档
+    title: HjhAi接口文档
     description: 接口文档
-    url: https://docs.xiaominfo.com
+    url: https://docs2.wepromo.com
     version: 1.0
     group:
       system:
