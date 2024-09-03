@@ -11,7 +11,7 @@ sudo docker compose up -d
 sudo docker compose up -d leona-rabbitmq
 
 https://github.com/DaoCloud/public-image-mirror
-sudo docker cp leona-rabbitmq:/etc/rabbitmq ./mq-conf
+sudo docker cp rabbitmq:/etc/rabbitmq ./mq-conf
 
 sudo docker compose ps
 sudo docker compose logs -f leona
@@ -96,6 +96,8 @@ https://panda1.ai-space.net/wx/wxAuth/getShareSignature
 
 https://panda1.wepromo.cn/wx/wxAuth/getShareSignature
 https://panda1.wepromo.cn/wx/wxChat/yuanqi
+
+sudo docker rmi `docker images | grep none | awk '{print $3}'`
 ```
 
 ```
