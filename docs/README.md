@@ -1,6 +1,6 @@
 ```shell
 mvn clean package
-cp target/leona-api.jar docker/leona-fe/leona.jar
+cp modules-business/target/modules-business-1.0.0.jar docker/leona-fe/leona.jar
 cp docker/leona/application.yml docker/leona-fe/
 cp docker/leona/Dockerfile docker/leona-fe/
 
