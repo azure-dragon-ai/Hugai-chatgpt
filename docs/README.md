@@ -10,6 +10,7 @@ sudo docker compose up
 sudo docker compose up -d
 
 sudo docker compose ps
+sudo docker compose logs -f leona
 
 sudo docker compose up -d leona-mysql80
 sudo docker compose stop leona-mysql80
@@ -42,7 +43,7 @@ grant all privileges on leona.* to 'leona'@'%';
 flush privileges;
 
 mysqldump -h127.0.0.1 -uroot -P3306 -p leona > leona20240606.sql
-mysql -h127.0.0.1 -uroot -P3310 -p leona < ./db/mysql-0.7.0.sql
+mysql -h127.0.0.1 -uroot -P3310 -p leona < ../_doc/sql/db_hugai.sql
 mysql -h10.0.0.13 -uroot -P3306 -p
 mysql -h10.0.0.13 -uroot -P3306 -p leona < leona20240606.sql
 
