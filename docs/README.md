@@ -10,6 +10,8 @@ sudo docker compose up
 sudo docker compose up -d
 sudo docker compose up -d leona-rabbitmq
 
+sudo docker cp leona-rabbitmq:/etc/rabbitmq ./mq-conf
+
 sudo docker compose ps
 sudo docker compose logs -f leona
 
