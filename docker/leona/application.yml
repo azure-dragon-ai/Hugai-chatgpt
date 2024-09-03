@@ -49,10 +49,10 @@ spring:
         # 日志
         debug: false
   rabbitmq:
-    host: 127.0.0.1
+    host: leona-rabbitmq
     port: 5672
-    username: guest
-    password: guest
+    username: rabbit
+    password: 123456
     virtual-host: /
     listener:
       simple:
