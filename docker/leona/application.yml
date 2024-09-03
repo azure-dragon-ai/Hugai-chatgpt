@@ -185,7 +185,7 @@ knife4j:
           - com.hugai.modules.session
           - com.hugai.modules.user
 server:
-  port: 7100
+  port: 8080
   servlet:
     context-path: /
   tomcat:
