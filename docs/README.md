@@ -8,6 +8,7 @@ sudo docker compose build
 sudo docker compose down
 sudo docker compose up
 sudo docker compose up -d
+sudo docker compose up -d leona-rabbitmq
 
 sudo docker compose ps
 sudo docker compose logs -f leona
