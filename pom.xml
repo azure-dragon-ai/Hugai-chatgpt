@@ -16,14 +16,6 @@
 
     <repositories>
         <repository>
-            <id>common</id>
-            <url>https://toushang6015.github.io/bebas-common/maven-repo/</url>
-        </repository>
-        <repository>
-            <id>common-service</id>
-            <url>https://toushang6015.github.io/bebas-common-service/maven-repo/</url>
-        </repository>
-        <repository>
             <id>defaultRep</id>
             <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
