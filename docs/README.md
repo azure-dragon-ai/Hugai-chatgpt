@@ -77,11 +77,10 @@ http://152.136.174.88:8080/doc.html
 npm install -g cnpm --registry=https://registry.npmmirror.com
 
 cd ui-admin
-cnpm install
-#cnpm install core-js@2.6.12 --save
+#cnpm install
 npm install
-npm run serve
-npm run build
+npm run dev
+npm run build:prod
 
 https://panda1.ai-space.net/
 https://panda1.ai-space.net/wx/swagger-ui/index.html
@@ -90,9 +89,10 @@ admin
 123456
 
 cd ui-client
-cnpm install
-npm run serve
-npm run build
+#cnpm install
+npm install
+npm run dev
+npm run build:prod
 https://panda-fe.ai-space.net/
 https://panda-fe.wepromo.cn/
 
