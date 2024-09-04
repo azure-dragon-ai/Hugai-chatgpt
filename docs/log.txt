@@ -1,226 +1,26 @@
-sudo docker-compose up -d
-ERROR: Failed to Setup IP tables: Unable to enable SKIP DNAT rule:  (iptables failed: iptables --wait -t nat -I DOCKER -i br-5b988b47c356 -j RETURN: iptables: No chain/target/match by that name.
+These dependencies were not found:
 
-udo docker compose ps
-WARN[0000] /data/home/zhangchunsheng/git/leona-api/docker/docker-compose.yml: `version` is obsolete
-NAME          IMAGE                              COMMAND                  SERVICE         CREATED          STATUS          PORTS
-hbbr          rustdesk/rustdesk-server:1.1.8-2   "hbbr -k _"              hbbr            8 months ago     Up 2 days       0.0.0.0:21117->21117/tcp, :::21117->21117/tcp, 0.0.0.0:21119->21119/tcp, :::21119->21119/tcp
-hbbs          rustdesk/rustdesk-server:1.1.8-2   "hbbs -r 152.136.174…"   hbbs            8 months ago     Up 2 days       0.0.0.0:21115-21116->21115-21116/tcp, :::21115-21116->21115-21116/tcp, 0.0.0.0:21118->21118/tcp, :::21118->21118/tcp, 0.0.0.0:21116->21116/udp, :::21116->21116/udp
-leona-fe      docker-leona                       "java -Djava.securit…"   leona           42 seconds ago   Up 9 seconds    0.0.0.0:8080->8080/tcp, :::8080->8080/tcp
-leona-mysql   mysql:8.0                          "docker-entrypoint.s…"   leona-mysql80   42 seconds ago   Up 41 seconds   33060/tcp, 0.0.0.0:3310->3306/tcp, :::3310->3306/tcp
-leona-redis   redis:6.0.6                        "docker-entrypoint.s…"   leona-redis     42 seconds ago   Up 41 seconds   0.0.0.0:6380->6379/tcp, :::6380->6379/tcp
+* core-js/modules/es.array.push.js in ./node_modules/_@babel_runtime@7.25.6@@babel/runtime/helpers/objectSpread2.js, ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_babel-loader@8.3.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.11.1@vue-loader/lib??vue-loader-options!./src/components/Breadcrumb/index.vue?vue&type=script&lang=js and 22 others
+* core-js/modules/es.error.cause.js in ./node_modules/_@babel_runtime@7.25.6@@babel/runtime/helpers/toPrimitive.js, ./src/utils/request.js and 3 others
+* core-js/modules/es.object.proto.js in ./node_modules/_@babel_runtime@7.25.6@@babel/runtime/helpers/regeneratorRuntime.js
+* core-js/modules/es.set.difference.v2.js in ./src/utils/index.js
+* core-js/modules/es.set.intersection.v2.js in ./src/utils/index.js
+* core-js/modules/es.set.is-disjoint-from.v2.js in ./src/utils/index.js
+* core-js/modules/es.set.is-subset-of.v2.js in ./src/utils/index.js
+* core-js/modules/es.set.is-superset-of.v2.js in ./src/utils/index.js
+* core-js/modules/es.set.symmetric-difference.v2.js in ./src/utils/index.js
+* core-js/modules/es.set.union.v2.js in ./src/utils/index.js
+* core-js/modules/web.url-search-params.delete.js in ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_babel-loader@8.3.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.11.1@vue-loader/lib??vue-loader-options!./src/views/tool/gen/index.vue?vue&type=script&lang=js
+* core-js/modules/web.url-search-params.has.js in ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_babel-loader@8.3.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.11.1@vue-loader/lib??vue-loader-options!./src/views/tool/gen/index.vue?vue&type=script&lang=js
+* core-js/modules/web.url-search-params.size.js in ./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--12-0!./node_modules/_babel-loader@8.3.0@babel-loader/lib!./node_modules/_cache-loader@4.1.0@cache-loader/dist/cjs.js??ref--0-0!./node_modules/_vue-loader@15.11.1@vue-loader/lib??vue-loader-options!./src/views/tool/gen/index.vue?vue&type=script&lang=js
 
-authorized callback domain verification error
+To install them, you can run: npm install --save core-js/modules/es.array.push.js core-js/modules/es.error.cause.js core-js/modules/es.object.proto.js core-js/modules/es.set.difference.v2.js core-js/modules/es.set.intersection.v2.js core-js/modules/es.set.is-disjoint-from.v2.js core-js/modules/es.set.is-subset-of.v2.js core-js/modules/es.set.is-superset-of.v2.js core-js/modules/es.set.symmetric-difference.v2.js core-js/modules/es.set.union.v2.js core-js/modules/web.url-search-params.delete.js core-js/modules/web.url-search-params.has.js core-js/modules/web.url-search-params.size.js
 
-https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx83cca674da91bcee&redirect_uri=https%3A%2F%2Fpanda-fe.wepromo.cn%2F%23%2FwxLogin&response_type=code&scope=snsapi_base&state=0&connect_redirect=1#wechat_redirect
-https://open.weixin.qq.com/connect/oauth2/authorize
-?appid=wx83cca674da91bcee
-&redirect_uri=https%3A%2F%2Fpanda-fe.wepromo.cn%2F%23%2FwxLogin
-&response_type=code&scope=snsapi_base
-&state=0&connect_redirect=1#wechat_redirect
+added 1739 packages from 970 contributors and audited 1741 packages in 178.804s
 
-sudo cat /etc/vsftpd/vsftpd.conf
-# Example config file /etc/vsftpd/vsftpd.conf
-#
-# The default compiled in settings are fairly paranoid. This sample file
-# loosens things up a bit, to make the ftp daemon more usable.
-# Please see vsftpd.conf.5 for all compiled in defaults.
-#
-# READ THIS: This example file is NOT an exhaustive list of vsftpd options.
-# Please read the vsftpd.conf.5 manual page to get a full idea of vsftpd's
-# capabilities.
-#
-# Allow anonymous FTP? (Beware - allowed by default if you comment this out).
-anonymous_enable=NO
-#
-# Uncomment this to allow local users to log in.
-local_enable=YES
-#
-# Uncomment this to enable any form of FTP write command.
-write_enable=YES
-#
-# Default umask for local users is 077. You may wish to change this to 022,
-# if your users expect that (022 is used by most other ftpd's)
-local_umask=022
-#
-# Uncomment this to allow the anonymous FTP user to upload files. This only
-# has an effect if the above global write enable is activated. Also, you will
-# obviously need to create a directory writable by the FTP user.
-# When SELinux is enforcing check for SE bool allow_ftpd_anon_write, allow_ftpd_full_access
-#anon_upload_enable=YES
-#
-# Uncomment this if you want the anonymous FTP user to be able to create
-# new directories.
-#anon_mkdir_write_enable=YES
-#
-# Activate directory messages - messages given to remote users when they
-# go into a certain directory.
-dirmessage_enable=YES
-#
-# Activate logging of uploads/downloads.
-xferlog_enable=YES
-#
-# Make sure PORT transfer connections originate from port 20 (ftp-data).
-connect_from_port_20=YES
-#
-# If you want, you can arrange for uploaded anonymous files to be owned by
-# a different user. Note! Using "root" for uploaded files is not
-# recommended!
-#chown_uploads=YES
-#chown_username=whoever
-#
-# You may override where the log file goes if you like. The default is shown
-# below.
-#xferlog_file=/var/log/xferlog
-#
-# If you want, you can have your log file in standard ftpd xferlog format.
-# Note that the default log file location is /var/log/xferlog in this case.
-xferlog_std_format=YES
-#
-# You may change the default value for timing out an idle session.
-#idle_session_timeout=600
-#
-# You may change the default value for timing out a data connection.
-#data_connection_timeout=120
-#
-# It is recommended that you define on your system a unique user which the
-# ftp server can use as a totally isolated and unprivileged user.
-#nopriv_user=ftpsecure
-#
-# Enable this and the server will recognise asynchronous ABOR requests. Not
-# recommended for security (the code is non-trivial). Not enabling it,
-# however, may confuse older FTP clients.
-#async_abor_enable=YES
-#
-# By default the server will pretend to allow ASCII mode but in fact ignore
-# the request. Turn on the below options to have the server actually do ASCII
-# mangling on files when in ASCII mode. The vsftpd.conf(5) man page explains
-# the behaviour when these options are disabled.
-# Beware that on some FTP servers, ASCII support allows a denial of service
-# attack (DoS) via the command "SIZE /big/file" in ASCII mode. vsftpd
-# predicted this attack and has always been safe, reporting the size of the
-# raw file.
-# ASCII mangling is a horrible feature of the protocol.
-#ascii_upload_enable=YES
-#ascii_download_enable=YES
-#
-# You may fully customise the login banner string:
-#ftpd_banner=Welcome to blah FTP service.
-#
-# You may specify a file of disallowed anonymous e-mail addresses. Apparently
-# useful for combatting certain DoS attacks.
-#deny_email_enable=YES
-# (default follows)
-#banned_email_file=/etc/vsftpd/banned_emails
-#
-# You may specify an explicit list of local users to chroot() to their home
-# directory. If chroot_local_user is YES, then this list becomes a list of
-# users to NOT chroot().
-# (Warning! chroot'ing can be very dangerous. If using chroot, make sure that
-# the user does not have write access to the top level directory within the
-# chroot)
-#chroot_local_user=YES
-#chroot_list_enable=YES
-# (default follows)
-#chroot_list_file=/etc/vsftpd/chroot_list
-#
-# You may activate the "-R" option to the builtin ls. This is disabled by
-# default to avoid remote users being able to cause excessive I/O on large
-# sites. However, some broken FTP clients such as "ncftp" and "mirror" assume
-# the presence of the "-R" option, so there is a strong case for enabling it.
-#ls_recurse_enable=YES
-#
-# When "listen" directive is enabled, vsftpd runs in standalone mode and
-# listens on IPv4 sockets. This directive cannot be used in conjunction
-# with the listen_ipv6 directive.
-listen=NO
-#
-# This directive enables listening on IPv6 sockets. By default, listening
-# on the IPv6 "any" address (::) will accept connections from both IPv6
-# and IPv4 clients. It is not necessary to listen on *both* IPv4 and IPv6
-# sockets. If you want that (perhaps because you want to listen on specific
-# addresses) then you must run two copies of vsftpd with two configuration
-# files.
-# Make sure, that one of the listen options is commented !!
-listen_ipv6=YES
+149 packages are looking for funding
+  run `npm fund` for details
 
-pam_service_name=vsftpd
-userlist_enable=YES
-
- => ERROR [internal] load metadata for docker.io/library/openjdk:11-jre                                                                                                     33.3s
-------
- > [internal] load metadata for docker.io/library/openjdk:11-jre:
-------
-Dockerfile:1
---------------------
-   1 | >>> FROM openjdk:11-jre
-   2 |     RUN fc-cache
-   3 |     RUN fc-list
---------------------
-ERROR: failed to solve: openjdk:11-jre: failed to resolve source metadata for docker.io/library/openjdk:11-jre: failed to copy: httpReadSeeker: failed open: unexpected status code https://dockerhub.icu/v2/library/openjdk/blobs/sha256:362cda5d270e81aabfbbbaf8fe7ebcc7633f38b7952a9f6bc7ef68397662f0f9?ns=docker.io: 403 Forbidden
-
-sudo docker info
-Client: Docker Engine - Community
- Version:    26.1.3
- Context:    default
- Debug Mode: false
- Plugins:
-  buildx: Docker Buildx (Docker Inc.)
-    Version:  v0.14.0
-    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
-  compose: Docker Compose (Docker Inc.)
-    Version:  v2.27.0
-    Path:     /usr/libexec/docker/cli-plugins/docker-compose
-
-Server:
- Containers: 3
-  Running: 3
-  Paused: 0
-  Stopped: 0
- Images: 56
- Server Version: 26.1.3
- Storage Driver: overlay2
-  Backing Filesystem: extfs
-  Supports d_type: true
-  Using metacopy: false
-  Native Overlay Diff: true
-  userxattr: false
- Logging Driver: json-file
- Cgroup Driver: systemd
- Cgroup Version: 2
- Plugins:
-  Volume: local
-  Network: bridge host ipvlan macvlan null overlay
-  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
- Swarm: inactive
- Runtimes: io.containerd.runc.v2 runc
- Default Runtime: runc
- Init Binary: docker-init
- containerd version: 8b3b7ca2e5ce38e8f31a34f35b2b68ceb8470d89
- runc version: v1.1.12-0-g51d5e94
- init version: de40ad0
- Security Options:
-  seccomp
-   Profile: builtin
-  cgroupns
- Kernel Version: 5.14.0-447.el9.x86_64
- Operating System: CentOS Stream 9
- OSType: linux
- Architecture: x86_64
- CPUs: 2
- Total Memory: 3.574GiB
- Name: h1.corp.bj.ai-space.net
- ID: 66c2add7-baa5-40d8-8416-54a16d0a5f7c
- Docker Root Dir: /data/docker
- Debug Mode: false
- Username: yiluxiangbei
- Experimental: false
- Insecure Registries:
-  127.0.0.0/8
- Registry Mirrors:
-  https://dockerhub.icu/
-  https://uuw2j1yi.mirror.aliyuncs.com/
-  https://kfwkfulq.mirror.aliyuncs.com/
-  https://2lqq34jg.mirror.aliyuncs.com/
-  https://pee6w651.mirror.aliyuncs.com/
- Live Restore Enabled: false
+found 119 vulnerabilities (2 low, 99 moderate, 15 high, 3 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+  

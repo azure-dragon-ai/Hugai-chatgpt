@@ -5,4 +5,5 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN echo 'Asia/Shanghai' > /etc/timezone
 COPY application.yml application.yml
 COPY leona.jar leona.jar
+COPY module-common-1.0.0.jar module-common-1.0.0.jar
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","leona.jar"]

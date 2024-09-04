@@ -1,6 +1,7 @@
 ```shell
 mvn clean package
 cp modules-business/target/modules-business-1.0.0.jar docker/leona-fe/leona.jar
+cp module-common/target/module-common-1.0.0.jar docker/leona-fe/module-common-1.0.0.jar
 cp docker/leona/application.yml docker/leona-fe/
 cp docker/leona/Dockerfile docker/leona-fe/
 
@@ -72,8 +73,12 @@ leona123456
 http://152.136.174.88:8080/
 http://152.136.174.88:8080/wx/
 
-cd leona-manage
+npm install -g cnpm --registry=https://registry.npmmirror.com
+
+cd ui-admin
 cnpm install
+#cnpm install core-js@2.6.12 --save
+npm install
 npm run serve
 npm run build
 
@@ -83,7 +88,7 @@ https://panda1.wepromo.cn
 admin
 Hjh@20241
 
-cd leona-client
+cd ui-client
 cnpm install
 npm run serve
 npm run build
