@@ -72,7 +72,7 @@ mysql -h10.0.0.13 -uleona -P3306 -p
 leona123456
 
 http://152.136.174.88:8080/
-http://152.136.174.88:8080/wx/
+http://152.136.174.88:8080/doc.html
 
 npm install -g cnpm --registry=https://registry.npmmirror.com
 
@@ -87,7 +87,7 @@ https://panda1.ai-space.net/
 https://panda1.ai-space.net/wx/swagger-ui/index.html
 https://panda1.wepromo.cn
 admin
-Hjh@20241
+123456
 
 cd ui-client
 cnpm install

@@ -58,7 +58,8 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./leona/storage:/storage
+      #- ./leona/storage:/storage
+      - /home/hjh/git/website/:/storage
       - ./leona/logs:/logs
       - ./leona/backup:/backup
       - /etc/localtime:/etc/localtime
