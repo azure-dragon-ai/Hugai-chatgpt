@@ -82,30 +82,15 @@ npm install
 npm run dev
 npm run build:prod
 
-https://panda1.ai-space.net/
-https://panda1.ai-space.net/wx/swagger-ui/index.html
-https://panda1.wepromo.cn
+https://ai2.wepromo.cn
 admin
 123456
 
 cd ui-client
 #cnpm install
 npm install
-npm run dev
-npm run build:prod
-https://panda-fe.ai-space.net/
-https://panda-fe.wepromo.cn/
-
-https://panda1.ai-space.net/wx/wxAuth/codeToOpenid
-https://panda1.ai-space.net/wx/wxAuth/codeToUserInfo
-https://panda1.ai-space.net/wx/wxAuth/getShareSignature
-
-https://panda1.wepromo.cn/wx/wxAuth/getShareSignature
-https://panda1.wepromo.cn/wx/wxChat/yuanqi
+npm run serve
+npm run build
 
 sudo docker rmi `docker images | grep none | awk '{print $3}'`
-```
-
-```
-http://localhost:8080/wx/swagger-ui/index.html
 ```
