@@ -26,7 +26,7 @@ public class FilterConfig {
     }
 
     @Bean("corsFilter")
-    public FilterRegistrationBean sqlFilterRegistrationBean() {
+    public FilterRegistrationBean corsFilterRegistrationBean() {
         FilterRegistrationBean bean = new FilterRegistrationBean();
         bean.setFilter(new CorsFilter());
         bean.addUrlPatterns("/*");
