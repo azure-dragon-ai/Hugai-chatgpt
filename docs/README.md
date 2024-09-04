@@ -15,6 +15,7 @@ https://github.com/DaoCloud/public-image-mirror
 sudo docker cp rabbitmq:/etc/rabbitmq ./mq-conf
 
 sudo docker compose ps
+sudo docker compose logs -f
 sudo docker compose logs -f leona
 
 sudo docker compose up -d leona-mysql80
