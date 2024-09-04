@@ -25,4 +25,13 @@ public class FilterConfig {
         return bean;
     }
 
+    @Bean("corsFilter")
+    public FilterRegistrationBean sqlFilterRegistrationBean() {
+        FilterRegistrationBean bean = new FilterRegistrationBean();
+        bean.setFilter(new CorsFilter());
+        bean.addUrlPatterns("/*");
+        bean.setOrder(0);
+        return bean;
+    }
+
 }
