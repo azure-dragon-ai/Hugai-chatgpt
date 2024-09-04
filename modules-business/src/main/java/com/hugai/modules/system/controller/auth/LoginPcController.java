@@ -45,7 +45,6 @@ public class LoginPcController {
     @PostMapping("/login")
     @ApiOperation(value = "用户登陆", httpMethod = "POST", response = Result.class)
     @ApiImplicitParam(name = "param", value = "参数", dataType = "param", required = true, paramType = "body")
-    @CrossOrigin
     public Result login(@RequestBody LoginBody param) {
         // 123456
         // aIpYMEwSEoTZSdktaVHCE2Bf8sKH+7pRtae5iOheeIVP+xtBwfOLn7xGqrc2ZMuPlic3lUWalmxmg7svnHEHU6Pe3Ag91+RSOzRKHTGFIqkbo3PBabVhOCg+P4Sn4Q/q+Uz5ArqQFeGk0KCFRVPs1vvya9qvV9voKRw2siMQzQQ=
@@ -59,14 +58,12 @@ public class LoginPcController {
     @PostMapping("/register")
     @ApiOperation(value = "用户注册", httpMethod = "POST", response = Result.class)
     @ApiImplicitParam(name = "param", value = "参数", dataType = "param", required = true, paramType = "body")
-    @CrossOrigin
     public Result register(@RequestBody RegisterBody param) {
         return registerService.doRegister(param);
     }
 
     @GetMapping("/info")
     @ApiOperation(value = "获取用户详细信息", httpMethod = "GET", response = Result.class)
-    @CrossOrigin
     public Result info() {
         ResourceMainVO resourceMainVO = baseResourceWebApi.getResourceMain();
         UserInfoDetailVo userInfo = sysUserService.getUserInfoDetail(SecurityContextUtil.getUserId());
