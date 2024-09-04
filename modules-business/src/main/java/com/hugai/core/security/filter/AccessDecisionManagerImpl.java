@@ -44,7 +44,7 @@ public class AccessDecisionManagerImpl implements AccessDecisionManager {
         }
         if (authentication.getPrincipal() instanceof String) {
             if (authentication.getPrincipal().equals("anonymousUser")) {
-                String msg = "系统认证失败，请先登录后在操作";
+                String msg = "系统认证失败，请先登录后在操作1";
                 throw new AccessDeniedException(msg);
             }
         }

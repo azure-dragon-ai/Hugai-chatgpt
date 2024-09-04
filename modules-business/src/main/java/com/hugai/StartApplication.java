@@ -13,7 +13,7 @@ public class StartApplication {
     public static void main(String[] args) {
         SpringApplication.run(StartApplication.class, args);
 
-        System.out.println("启动成功，帮助文档地址：http://chat.doc.equinox19.xyz/");
+        System.out.println("启动成功，帮助文档地址：https://ai2.wepromo.cn/doc.html");
     }
 
 }

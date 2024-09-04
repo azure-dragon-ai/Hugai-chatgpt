@@ -73,6 +73,7 @@ leona123456
 
 http://152.136.174.88:8080/
 http://152.136.174.88:8080/doc.html
+https://ai2.wepromo.cn
 
 npm install -g cnpm --registry=https://registry.npmmirror.com
 
@@ -82,8 +83,12 @@ npm install
 npm run dev
 npm run build:prod
 
-https://ai2.wepromo.cn
+https://ai2-1.wepromo.cn
 admin
+123456
+
+https://ai2-2.wepromo.cn
+test
 123456
 
 cd ui-client
