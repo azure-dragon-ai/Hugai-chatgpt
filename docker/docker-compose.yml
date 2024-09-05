@@ -13,6 +13,8 @@ services:
       - ./db/conf.d:/etc/mysql/conf.d
       - ./db/data:/var/lib/mysql
       - ./db/init-sql:/docker-entrypoint-initdb.d
+    networks:
+      - leona
     environment:
       MYSQL_ROOT_PASSWORD: leona123456
     restart: always
@@ -33,6 +35,8 @@ services:
     environment:
       - TZ=Asia/Shanghai
       - LANG=en_US.UTF-8
+    networks:
+      - leona
     #docker 重启后，容器自启动
     restart: always
   leona-rabbitmq:
@@ -47,6 +51,8 @@ services:
       TZ: Asia/Shanghai
       RABBITMQ_DEFAULT_USER: rabbit
       RABBITMQ_DEFAULT_PASS: 123456
+    networks:
+      - leona
     #volumes:
     #  - ./mq-data:/var/lib/rabbitmq
     #  - ./mq-conf:/etc/rabbitmq
@@ -66,4 +72,11 @@ services:
     depends_on:
       - leona-mysql80
       - leona-redis
+    networks:
+      - leona
     restart: always
+
+networks:
+  leona:
+    # driver: bridge
+    external: true

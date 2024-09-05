@@ -5,6 +5,8 @@ cp module-common/target/module-common-1.0.0.jar docker/leona-fe/module-common-1.
 cp docker/leona/application.yml docker/leona-fe/
 cp docker/leona/Dockerfile docker/leona-fe/
 
+sudo docker network create --subnet=172.10.0.0/16 leona
+
 sudo docker compose build
 sudo docker compose down
 sudo docker compose up
