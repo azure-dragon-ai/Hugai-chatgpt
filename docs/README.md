@@ -1,4 +1,5 @@
 ```shell
+git checkout ai
 mvn clean package
 cp modules-business/target/modules-business-1.0.0.jar docker/leona-fe/leona.jar
 cp module-common/target/module-common-1.0.0.jar docker/leona-fe/module-common-1.0.0.jar
