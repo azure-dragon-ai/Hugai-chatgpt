@@ -61,6 +61,9 @@ mysql -h127.0.0.1 -uroot -P3310 -p leona < ../_doc/sql/db_hugai.sql
 mysql -h10.0.0.13 -uroot -P3306 -p
 mysql -h10.0.0.13 -uroot -P3306 -p leona < leona20240606.sql
 
+mysql -h127.0.0.1 -uroot -P3310 -p leona < ../_doc/sql/db_hugai.sql
+leona123456
+
 redis-cli -h 127.0.0.1 -p 6380
 auth default leona123456
 
