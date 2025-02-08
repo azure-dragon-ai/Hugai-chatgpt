@@ -62,7 +62,7 @@ services:
       dockerfile: Dockerfile
     container_name: leona-fe
     ports:
-      - "8080:8080"
+      - "8090:8080"
     volumes:
       #- ./leona/storage:/storage
       - /home/hjh/git/website/:/storage
