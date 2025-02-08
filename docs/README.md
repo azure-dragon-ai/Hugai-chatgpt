@@ -13,6 +13,8 @@ sudo docker compose up
 sudo docker compose up -d
 sudo docker compose up -d leona-rabbitmq
 
+sudo docker compose stop leona
+
 https://github.com/DaoCloud/public-image-mirror
 sudo docker cp rabbitmq:/etc/rabbitmq ./mq-conf
 
