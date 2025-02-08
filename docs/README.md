@@ -86,6 +86,9 @@ http://152.136.174.88:8080/
 http://152.136.174.88:8080/doc.html
 https://ai2.wepromo.cn
 
+http://139.199.23.58:8090
+http://139.199.23.58:8090/doc.html
+
 npm install -g cnpm --registry=https://registry.npmmirror.com
 
 cd ui-admin
