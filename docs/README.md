@@ -1,4 +1,7 @@
 ```shell
+sudo docker pull docker.1ms.run/openjdk:11-jre
+sudo docker pull m.daocloud.io/docker.io/openjdk:11-jre
+sudo docker tag docker.1ms.run/openjdk:11-jre openjdk:11-jre
 git checkout ai
 mvn clean package
 cp modules-business/target/modules-business-1.0.0.jar docker/leona-fe/leona.jar
