@@ -88,6 +88,8 @@ https://ai2.wepromo.cn
 
 http://139.199.23.58:8090
 http://139.199.23.58:8090/doc.html
+https://chat.wepromo.cn
+https://chat-api2.wepromo.cn/
 
 npm install -g cnpm --registry=https://registry.npmmirror.com
 
