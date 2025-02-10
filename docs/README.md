@@ -100,10 +100,12 @@ npm run dev
 npm run build:prod
 
 https://ai2-1.wepromo.cn
+https://chat1.wepromo.cn
 admin
 123456
 
 https://ai2-2.wepromo.cn
+https://chat2.wepromo.cn
 test
 123456
 
