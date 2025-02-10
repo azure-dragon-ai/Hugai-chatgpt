@@ -163,8 +163,8 @@ CREATE TABLE `sys_file_config`  (
 -- ----------------------------
 -- Records of sys_file_config
 -- ----------------------------
-INSERT INTO `sys_file_config` VALUES (1, NULL, NULL, '1000000000', '2023-07-02 14:41:55', 0, 'local', 'E:\\doc\\hugai\\fileUpload\\');
-INSERT INTO `sys_file_config` VALUES (2, NULL, NULL, NULL, NULL, 0, 'server', '/root/fileUpload/');
+INSERT INTO `sys_file_config` VALUES (1, NULL, NULL, '1000000000', '2023-07-02 14:41:55', 0, 'local', '/storage/');
+INSERT INTO `sys_file_config` VALUES (2, NULL, NULL, NULL, NULL, 0, 'server', '/storage/');
 INSERT INTO `sys_file_config` VALUES (3, NULL, NULL, '1000000000', '2023-07-19 18:06:11', 0, 'qiniu', '/image/');
 
 -- ----------------------------

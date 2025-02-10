@@ -61,6 +61,8 @@ mysql -h127.0.0.1 -uroot -P3310 -p leona < ../_doc/sql/db_hugai.sql
 mysql -h10.0.0.13 -uroot -P3306 -p
 mysql -h10.0.0.13 -uroot -P3306 -p leona < leona20240606.sql
 
+mysql -h127.0.0.1 -uroot -P3310 -p
+leona123456
 mysql -h127.0.0.1 -uroot -P3310 -p leona < ../_doc/sql/db_hugai.sql
 leona123456
 
@@ -72,6 +74,15 @@ auth panda2024
 select 1
 keys *
 flushall
+
+mysql -h127.0.0.1 -uroot -P3310 -p
+leona123456
+use leona
+show tables;
+
+alter table tb_chat_model
+change column `unique_key` `unique_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '唯一标识',
+change column `model_value` `model_value` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT 'model参数值';
 
 mysql -h10.0.0.13 -uroot -P3306 -p
 leona123456
