@@ -84,6 +84,9 @@ alter table tb_chat_model
 change column `unique_key` `unique_key` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '唯一标识',
 change column `model_value` `model_value` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT 'model参数值';
 
+alter table tb_session_record
+change column `chat_model_value` chat_model_value varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT '模型值';
+
 mysql -h10.0.0.13 -uroot -P3306 -p
 leona123456
 use leona
