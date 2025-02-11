@@ -124,6 +124,9 @@ https://chat2.wepromo.cn
 test
 123456
 
+test2
+Hjh2024
+
 cd ui-client
 #cnpm install
 npm install
