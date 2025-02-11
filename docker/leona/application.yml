@@ -34,18 +34,18 @@ spring:
     # redis密码，为空可以删掉
     password: leona123456
   mail:
-    host: smtp.qq.com
-    username: xxxxxx@qq.com
-    password: xxxxxx
+    host: smtp.exmail.qq.com
+    username: xitongtongzhi@ai-space.net
+    password: GM7jJYjimg4BK3Li
     #端口号465或587
-    port: 587
+    port: 465
     default-encoding: UTF-8
     properties:
       mail:
         smtp:
           ssl:
-            enable: false
-            required: false
+            enable: true
+            required: true
         # 日志
         debug: false
   rabbitmq:
